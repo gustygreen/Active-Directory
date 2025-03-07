@@ -105,5 +105,51 @@ Verify that the Private IP Address shows as Static.
 
 <h2>Disable Domain Controller Firewall</h2>
 
-<img src="![Uploading image.png…]()
+<p>
+<img src="https://github.com/user-attachments/assets/0db3d3c3-c605-41d6-ae83-782fe21a66f8" height="50%" width="50%"/>
 
+RDP to the Domain Controller.
+</p>
+
+<p>
+<img src="https://github.com/user-attachments/assets/76911fdf-de7f-4117-bacc-fe2fcc6c2b84" height="50%" width="50%"/>
+
+ Select Run-fw.msc
+</p>
+
+<p>
+<img src="https://github.com/user-attachments/assets/dc4e7c19-0486-4fc9-95f4-efdeb9fdcf4c" height="50%" width="50%"/>
+
+ Select Windows Defender Firewall Properties-Change Firewall state to Off-Apply-OK. (Turn this off for Domain, Private, and Public Profiles).
+</p>
+
+<h2>Set Client to point to DNS on Domain controller</h2>
+
+<p>
+<img src="https://github.com/user-attachments/assets/98a7f80d-37e6-430a-a48e-678df487dad4" height="50%" width="50%"/>
+
+ Go to client-1 in Azure-Network settings-Virtual NIC
+</p>
+
+<p>
+<img src="https://github.com/user-attachments/assets/0f243259-0327-4669-927c-7a5469608238" height="50%" width="50%"/>
+
+ Select DNS servers. Change DNS servers to Custom. Put in the Domain Controllers Private IP address for the DNS server. Save.
+</p>
+
+<img src="https://github.com/user-attachments/assets/2507468f-6cfd-445a-b5c2-38d0c774c1d8" height="50%" width="50%"/>
+
+In Azure, Restart client-1 for the DNS info to take affect.
+
+<h2>Verify connection between DC and Client</h2>
+<p>
+<img src="https://github.com/user-attachments/assets/60f0318e-42e9-42f1-9c57-0a2a251e6b7e" height="50%" width="50%"/>
+
+RDP to client-1. Verify that you can ping DC-1(10.0.0.4)
+</p>
+
+<p>
+<img src="https://github.com/user-attachments/assets/3c9f77ab-59cb-4c85-af43-d229292923b9" height="50%" width="50%"/>
+
+Run ipconfig /all. Verify tthat the DNS Servers is pointing to the Domain Controller(10.0.0.4).
+</p>
