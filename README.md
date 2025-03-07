@@ -2,8 +2,8 @@
 <img src="https://github.com/user-attachments/assets/7a73b456-adac-4f3b-ac4a-b09f282f134f" height="30%" width="30%"/>
 </p>
 
-<h1>Creating an Active Directory Domain</h1>
-In this tutorial, we create an Active Directory Domain joinging a Windows client to the Domain.<br />
+<h1>Create an Active Directory Domain</h1>
+In this tutorial, we create an Active Directory Domain joining a Windows client to the Domain Controller.<br />
 
 <h2>Environments and Technologies Used</h2>
 
