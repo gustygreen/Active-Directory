@@ -9,6 +9,7 @@ In this tutorial, we create an Active Directory Domain joining a Windows client 
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Virtual Network inside Azure Resource Group
+- RDP
 - Powershell
 
 <h2>Operating Systems Used </h2>
